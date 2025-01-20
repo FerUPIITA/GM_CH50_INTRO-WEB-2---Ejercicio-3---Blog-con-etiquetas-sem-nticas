@@ -1,122 +1,184 @@
-body {
-    font-family: 'Arial', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    background-image: url('https://pqs.pe/wp-content/uploads/2017/11/melodia-musica-pixabay.jpg');
-    background-size: cover;
-    background-position: center;
+    box-sizing: border-box;
+
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+}
 
-
-.main-header {
-    background: linear-gradient(90deg, #ff6f61, #ff8e53);
-    color: white;
-    padding: 1rem;
+/*Estio en e encabezado*/
+header.main-header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #2980b9;
+
 }
 
-.main-header .logo {
+header .logo {
     display: flex;
     align-items: center;
 }
 
-.main-header .logo img {
+header .logo img {
+    margin-right: 15px;
     border-radius: 50%;
-    margin-right: 1rem;
 }
 
-nav ul {
+header h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 20px;
 }
 
-nav ul li a {
-    color: white;
+header nav ul li a {
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: #ecf0f1;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ffe082;
+header nav ul li a:hover {
+    background-color: #2980b9;
+    border-radius: 5px;
 }
 
-.intro,
-.top-5 {
-    background: white;
-    margin: 1.5rem auto;
-    padding: 1rem;
+/*Contenido de Main*/
+main {
+    padding: 30px 10%;
+}
+
+section.intro {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    line-height: 1.6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
-.bio {
-    background: white;
-    margin: 1.5rem auto;
-    padding: 1rem;
+.intro h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+/* Bio Section */
+section.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #ecf0f1;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    line-height: 1.6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
 .bio-content {
     display: flex;
-    align-items: flex-start;
-    /* Alinea la imagen con el texto */
-    gap: 1rem;
-    /* Espacio entre la imagen y el texto */
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    text-align: center;
 }
 
 .bio-image {
     width: 150px;
-    /* Ajusta el tamaño de la imagen */
-    height: auto;
-    /* Mantén la proporción de la imagen */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2c3e50;
+}
+
+/* Top 5 Songs Section */
+section.top-5 {
+    background: #ffffff;
+    padding: 20px;
     border-radius: 10px;
-    /* Opcional: redondea las esquinas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra opcional */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h2,
-h3 {
-    color: #ff6f61;
+.top-5 h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
 }
 
-ol {
-    padding-left: 1.5rem;
+.top-5 ol {
+    list-style: decimal inside;
+    padding-left: 0;
 }
 
-ol li {
-    margin-bottom: 0.5rem;
+.top-5 li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #7f8c8d;
 }
 
-ol li a {
-    color: #007BFF;
+.top-5 li a {
+    color: #2980b9;
     text-decoration: none;
-    transition: color 0.3s;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-ol li a:hover {
-    color: #0056b3;
+.top-5 li a:hover {
+    color: #e74c3c;
 }
 
+/* Footer Styles */
 footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
     text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 15px 10%;
+    margin-top: 20px;
+    font-size: 0.9rem;
 }
+
+/* Responsive Design */
+/*@media (max-width: 768px) {
+    header.main-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .bio-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section.intro,
+    section.bio,
+    section.top-5 {
+        padding: 15px;
+    }
+}*/
