@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url('https://pqs.pe/wp-content/uploads/2017/11/melodia-musica-pixabay.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.main-header {
+    background: linear-gradient(90deg, #ff6f61, #ff8e53);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.main-header .logo img {
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffe082;
+}
+
+.intro,
+.top-5 {
+    background: white;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.bio {
+    background: white;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.bio-content {
+    display: flex;
+    align-items: flex-start;
+    /* Alinea la imagen con el texto */
+    gap: 1rem;
+    /* Espacio entre la imagen y el texto */
+}
+
+.bio-image {
+    width: 150px;
+    /* Ajusta el tamaño de la imagen */
+    height: auto;
+    /* Mantén la proporción de la imagen */
+    border-radius: 10px;
+    /* Opcional: redondea las esquinas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra opcional */
+}
+
+h2,
+h3 {
+    color: #ff6f61;
+}
+
+ol {
+    padding-left: 1.5rem;
+}
+
+ol li {
+    margin-bottom: 0.5rem;
+}
+
+ol li a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+ol li a:hover {
+    color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
