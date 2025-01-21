@@ -14,36 +14,39 @@
             <img src="https://logopond.com/logos/c0c996aa95c7d9477e24a8f9a2840e17.png" alt="Blog Logo" width="120">
             <h1>Mi Blog Musical</h1>
         </div>
-        <nav>
+        <!--<nav aria-label="Main Navigation">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Reseñas</a></li>
-                <li><a href="#">Playlists</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="#playlists">Playlists</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </nav>
+        </nav>-->
     </header>
 
     <main>
-        <section class="intro">
+        <section id="inicio" class="intro">
             <h2>Bienvenido a Mi Blog Musical</h2>
             <p>Explora el mundo de la música conmigo. Aquí encontrarás reseñas de álbumes, playlists para cada ocasión y
                 mucho más sobre mis gustos musicales.</p>
         </section>
 
-        <section class="bio">
-            <h3>Sobre mí</h3>
-            <div class="bio-content">
-                <img src="FotoFernandoMoreno.jpg" alt="Mi foto" class="bio-image">
+        <section id="resenas" class="bio">
+            <h2>Sobre mí</h2>
+            <article class="bio-content">
+                <figure>
+                    <img src="FotoFernandoMoreno.jpg" alt="Mi foto" class="bio-image">
+                    <figcaption>Fernando Moreno Camacho</figcaption>
+                </figure>
                 <p>¡Hola! Soy un apasionado de la música, amante de los géneros como el rock alternativo, pop indie y
                     lo-fi.
                     En este blog comparto mis descubrimientos, recomendaciones y todo lo que me inspira a través de la
                     música.</p>
-            </div>
+            </article>
         </section>
 
-        <section class="top-5">
-            <h3>Mis Top 5 Canciones Favoritas del Momento</h3>
+        <section id="playlists" class="top-5">
+            <h2>Mis Top 5 Canciones Favoritas del Momento</h2>
             <ol>
                 <li><a href="https://youtu.be/fJ9rUzIMcZQ" target="_blank">"Bohemian Rhapsody" - Queen</a></li>
                 <li><a href="https://youtu.be/ktvTqknDobU" target="_blank">"Radioactive" - Imagine Dragons</a></li>
@@ -56,6 +59,9 @@
     </main>
 
     <footer>
+        <address>
+            Contacto: <a href="#">fernando.moreno@miblogmusical.com</a>
+        </address>
         <p>&copy; 2025 Mi Blog Musical. Todos los derechos reservados.</p>
     </footer>
 
